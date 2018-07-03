@@ -30,9 +30,9 @@ p, ol li, ul li { line-height:1.4;}
 
 .section-home { background:#fff url(../images/backgrounds/bg-home.png) no-repeat center; background-size:cover;}
 
-.section-intro { background:#fff url(../images/backgrounds/bg-arrow.png) no-repeat left 45vh; background-size:cover;}
-.section-intro-video { background:#fff url(../images/backgrounds/bg-arrow.png) no-repeat left -55vh; background-size:cover;}
-.section-features { background:#fff url(../images/backgrounds/bg-arrow.png) no-repeat left -155vh; background-size:cover;}
+.section-intro { background:#fff url(../images/backgrounds/bg-arrow.png) no-repeat; background-size:1440px 1500px; background-position:left 0 top 50vh}
+.section-intro-video { background:#fff url(../images/backgrounds/bg-arrow.png) no-repeat; background-size:1440px 1500px; background-position:left 0 top -50vh}
+.section-features { background:#fff url(../images/backgrounds/bg-arrow.png) no-repeat; background-size:1440px 1500px; background-position:left 0 top -150vh}
 
 .article h2 { font-size:2rem; font-weight:700; line-height:1.2; margin:0 0 .5rem; color:#EAAE61; text-transform: uppercase}
 .article h2 small { text-transform: none; font-weight:400; color:#fff; font-size:1.75rem; display:block;}
@@ -61,7 +61,7 @@ p, ol li, ul li { line-height:1.4;}
 .block-menu .block-item a { }
 
 .video-container { margin:2.5rem 0;}
-.video-container h4 { color:#fff; font-size:1.75rem; margin:0; font-weight:400}
+.video-container h4 { color:#EAAE61; font-size:1.75rem; margin:0; font-weight:600}
 
 .reveal { border-radius:0; overflow: visible; padding:.5rem}
 .reveal .close-button { height:2rem; width:2rem; text-align:center; color:#fff; background:#EF9224; top:-.5rem; right:-.5rem; z-index:32; border-radius:0;}
