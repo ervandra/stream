@@ -26,7 +26,7 @@ p, ol li, ul li { line-height:1.4;}
 .section-quote { font-size:4rem; color:#fff; margin-bottom:2.5rem}
 .section-image { margin-bottom:1.5rem;}
 
-.video-thumbnail { cursor: pointer; position: relative;}
+.video-thumbnail { cursor: pointer; position: relative; outline:none;}
 .video-thumbnail img { transition: all ease-in-out .2s; width: 100%;}
 .video-thumbnail .button { background: #D3D3D3; color:#fff; border-radius:8px; width:80px; height:80px; border:none; line-height: 80px; text-align: center; font-size: 3.5rem; padding:0; display:block; margin:0; padding-left:.4375rem; position:absolute; top:50%; left:50%; margin-left:-40px; margin-top:-40px}
 .video-thumbnail:hover .button, .video-thumbnail:focus .button { background: #EAAE61;}
@@ -36,6 +36,7 @@ p, ol li, ul li { line-height:1.4;}
 .orbit-bullets button { width:2rem; height:.5rem; margin:0 .5rem; border-radius:4px}
 .orbit-bullets button.is-active { background: #4E4EA5}
 
+.orbit-container, .orbit-slide { outline:none;}
 .orbit-previous, .orbit-next { color: #4B4BA0; background: #DEDEDE; border-radius:30rem; width:64px; height:64px; font-size:3.25rem; padding:0; text-align: center; line-height:64px; top: 39%; opacity: .5;}
 .orbit-previous { padding-right:.5rem; left:-5.75rem}
 .orbit-next { padding-left:.5rem; right:-5.75rem}
@@ -62,7 +63,7 @@ p, ol li, ul li { line-height:1.4;}
 .section-cloud-gaming-videos { background: url(../images/backgrounds/bg-arrow-small-variant.png) no-repeat right -32px top 35vh, url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top -25vh;}
 
 .article h2 { font-size:2rem; font-weight:700; line-height:1.2; margin:0 0 .5rem; color:#EAAE61; text-transform: uppercase}
-.article h2 small { text-transform: none; font-weight:400; color:#fff; font-size:1.75rem; display:block;}
+.article h2 small { text-transform: none; font-weight:400; color:#fff; font-size:1.75rem; display:block; line-height: 1}
 
 .article.dark p { color:#fff; font-size:1.75rem; line-height: 1.4;}
 .article p.hashtag { margin-top:2.5rem; font-weight: 600; font-style:italic;}
@@ -108,6 +109,35 @@ p, ol li, ul li { line-height:1.4;}
 .features.subscription h3 { margin:0 0 .25rem; text-transform: uppercase; font-size:1.5rem;}
 
 .features-slideshow .video-thumbnail { margin-bottom:1.25rem}
+
+
+.section-footers { display: flex; justify-content: space-between; flex-direction: column; height:100%; align-items: stretch}
+
+.section-articles { flex:1; background:url(../images/backgrounds/bg-footer.png) no-repeat center; background-size:cover; display:flex; justify-content: center; flex-direction: column}
+.section-partners { flex-shrink:1; padding:5rem 0;}
+.section-footer-content { flex-shrink:1; background: #414099; padding:1.5rem 0;}
+.section-copyright { background:#fff; flex-shrink: 1;}
+
+.section-articles .article h2 { text-transform: none;}
+.section-articles .article h4 { text-transform: none; font-weight: 400; max-width: 960px}
+
+.section-partners .article h2 { text-transform: none; margin-bottom: 2rem;}
+
+.button.btn-ciayo-blog { color:#15BA8B; text-transform: uppercase; background:#fff url(../images/logo-ciayo-blog.png) no-repeat; background-position: left 24px center; padding:0 1.5rem; padding-left:3.625rem; line-height: 3rem; height:auto; border-radius:24px; margin-top:3rem; font-size:.75rem; font-weight: 600}
+.button.btn-ciayo-blog:hover, .button.btn-ciayo-blog:focus { background-color:#e3e3e3s}
+
+.footer-content { text-align: left; padding-right:1.5rem;}
+.footer-content.footer-right { padding-right:0; padding-left:1.5rem; border-left:1px solid #fff}
+.footer-content h3 { font-size:.75rem; text-transform: uppercase; font-weight:600;}
+.footer-content p { font-size:.75rem; margin:0;}
+.footer-content p a { color:#EAAE61; font-weight: 600}
+.footer-content p a:hover, .footer-content p a:focus { text-decoration: underline}
+
+.partner { padding:0 1rem;}
+
+.copyright { position: relative; padding:.5rem 0;}
+.copyright-text { font-size:.75rem; line-height: 1.6; color:#888888;}
+.site-identity { position: absolute; left:0; top:3px; width:60px;}
 
 @media only screen and (max-width:40em){
 }
