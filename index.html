@@ -17,40 +17,45 @@
 
 </head>
 
-<body>
+<body id="body" data-toggler=".open-menu">
 
 	<header id="header">
 		<div class="grid-container">
 			<div class="grid-x grid-margin-x">
 				<div class="cell auto">
-					<div class="logo">
-						<a href="#home" data-menuanchor="home">
-							<img src="images/logo.png" alt="CIAYO Stream">
-						</a>
+					<div class="navigation">
+						<div class="logo">
+							<a href="#home" data-menuanchor="home">
+								<img src="images/logo.png" alt="CIAYO Stream">
+							</a>
+						</div>
+						<ul id="menu-stream" data-toggler=".open" data-animate="fade-in fade-out">
+							<li data-menuanchor="home" class="active">
+								<a href="#home">Home</a>
+							</li>
+							<li data-menuanchor="intro">
+								<a href="#intro">Intro</a>
+							</li>
+							<li data-menuanchor="features">
+								<a href="#features">Features</a>
+							</li>
+							<li data-menuanchor="cloud-gaming">
+								<a href="#cloud-gaming">Cloud Gaming</a>
+							</li>
+							<li data-menuanchor="interactives">
+								<a href="#interactives">Interactives</a>
+							</li>
+							<li data-menuanchor="rewards">
+								<a href="#rewards">Rewards</a>
+							</li>
+							<li data-menuanchor="contact">
+								<a href="#contact">Contact Us</a>
+							</li>
+						</ul>
+						<div class="responsive-menu">
+							<a href="#mobile-menu" data-toggle="body menu-stream"><span class="fa fa-bars"></span></a>
+						</div>
 					</div>
-					<ul id="menu-stream">
-						<li data-menuanchor="home" class="active">
-							<a href="#home">Home</a>
-						</li>
-						<li data-menuanchor="intro">
-							<a href="#intro">Intro</a>
-						</li>
-						<li data-menuanchor="features">
-							<a href="#features">Features</a>
-						</li>
-						<li data-menuanchor="cloud-gaming">
-							<a href="#cloud-gaming">Cloud Gaming</a>
-						</li>
-						<li data-menuanchor="interactives">
-							<a href="#interactives">Interactives</a>
-						</li>
-						<li data-menuanchor="rewards">
-							<a href="#rewards">Rewards</a>
-						</li>
-						<li data-menuanchor="contact">
-							<a href="#contact">Contact Us</a>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -80,7 +85,7 @@
 		<div class="section section-intro" data-anchor="intro">
 			<div class="grid-container">
 				<div class="grid-x grid-margin-x align-right">
-					<div class="cell small-12 medium-7">
+					<div class="cell small-12 medium-12 large-7 tablet-12">
 						<div class="article">
 							<h2>Streaming Has Change
 								<br/>Our Future</h2>
@@ -113,6 +118,7 @@
 		</div>
 
 		<div class="section section-intro-video" data-anchor="intro-video">
+				<div class="grid-container">
 			<div class="grid-x grid-margin-x align-center">
 				<div class="cell small-12 medium-8 large-6">
 					<div class="article text-center">
@@ -121,7 +127,7 @@
 						</div>
 						<h2>
 							<small>At any rate, we have to catch up to the future…</small>
-							<br/> OR WE CAN CREATE ONE
+							OR WE CAN CREATE ONE
 						</h2>
 						<div class="video-container text-left">
 							<div class="grid-x grid-margin-x align-middle">
@@ -143,12 +149,14 @@
 						</div>
 					</div>
 				</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="section section-features" data-anchor="features">
+				<div class="grid-container">
 			<div class="grid-x grid-margin-x align-center">
-				<div class="cell small-12 medium-8 large-7">
+				<div class="cell small-12 medium-8 large-7 tablet-9">
 					<div class="article text-center">
 						<div class="section-image">
 							<img src="images/logo-color.png" alt="CIAYO Stream">
@@ -176,9 +184,11 @@
 						</div>
 					</div>
 				</div>
+				</div>
 			</div>
 		</div>
 		<div class="section section-cloud-gaming" data-anchor="cloud-gaming">
+				<div class="grid-container">
 			<div class="grid-x grid-margin-x align-center">
 				<div class="cell small-12 medium-8">
 					<div class="article">
@@ -189,10 +199,10 @@
 							</h2>
 						</div>
 						<div class="grid-x grid-margin-x align-middle align-justify">
-							<div class="cell small-12 medium-6">
+							<div class="cell small-12 medium-12 large-6">
 								<img src="images/cloud-gaming/what-is-it.png" alt="What is it?">
 							</div>
-							<div class="cell small-12 medium-5">
+							<div class="cell small-12 medium-12 large-5">
 								<div class="features">
 									<h3>With CIAYO Stream, you can:</h3>
 									<ul>
@@ -203,11 +213,13 @@
 								</div>
 							</div>
 						</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="section section-cloud-gaming-subscription" data-anchor="cloud-gaming-subscription">
+				<div class="grid-container">
 			<div class="grid-x grid-margin-x align-center">
 				<div class="cell small-12 medium-8">
 					<div class="article">
@@ -218,7 +230,7 @@
 							</h2>
 						</div>
 						<div class="grid-x grid-margin-x grid-margin-wide align-middle align-justify text-center">
-							<div class="cell small-12 medium-6">
+							<div class="cell small-12 medium-12 large-6">
 								<div class="features subscription">
 									<div class="features-img">
 										<img src="images/cloud-gaming/direct.png" alt="Cloud Gaming - Subscription: Direct">
@@ -227,7 +239,7 @@
 									<p>From CIAYO Stream’s Library</p>
 								</div>
 							</div>
-							<div class="cell small-12 medium-6">
+							<div class="cell small-12 medium-12 large-6">
 								<div class="features subscription">
 									<div class="features-img">
 										<img src="images/cloud-gaming/direct.png" alt="Cloud Gaming - Subscription: Import">
@@ -236,14 +248,16 @@
 									<p>From Steam, UPlay, Origin</p>
 								</div>
 							</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="section section-cloud-gaming-videos" data-anchor="cloud-gaming-videos">
+				<div class="grid-container">
 			<div class="grid-x grid-margin-x align-center">
-				<div class="cell small-12 medium-8">
+				<div class="cell small-12 medium-9 large-8">
 					<div class="article">
 						<div class="section-subtitle">
 							<img src="images/features/cloud-gaming.png" alt="CIAYO Stream: Features - Cloud Gaming - Videos ">
@@ -266,7 +280,7 @@
 										<li class="is-active orbit-slide">
 											<div class="features-slide">
 												<div class="grid-x grid-margin-20">
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="video-thumbnail" data-open="reveal-intro-video">
 															<img src="images/video-thumbnail-big.png" alt="Cloud Gaming : Video 1" />
 															<span class="button">
@@ -274,7 +288,7 @@
 															</span>
 														</div>
 													</div>
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="grid-x grid-margin-20 small-up-2">
 															<div class="cell small-6">
 																<div class="video-thumbnail">
@@ -316,7 +330,7 @@
 										<li class="orbit-slide">
 											<div class="features-slide">
 												<div class="grid-x grid-margin-20">
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="video-thumbnail" data-open="reveal-intro-video">
 															<img src="images/video-thumbnail-big.png" alt="Cloud Gaming : Video 1" />
 															<span class="button">
@@ -324,7 +338,7 @@
 															</span>
 														</div>
 													</div>
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="grid-x grid-margin-20 small-up-2">
 															<div class="cell small-6">
 																<div class="video-thumbnail" data-open="reveal-intro-video">
@@ -366,7 +380,7 @@
 										<li class="orbit-slide">
 											<div class="features-slide">
 												<div class="grid-x grid-margin-20">
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="video-thumbnail">
 															<img src="images/video-thumbnail-big.png" alt="Cloud Gaming : Video 1" />
 															<span class="button">
@@ -374,7 +388,7 @@
 															</span>
 														</div>
 													</div>
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="grid-x grid-margin-20 small-up-2">
 															<div class="cell small-6">
 																<div class="video-thumbnail">
@@ -416,7 +430,7 @@
 										<li class="orbit-slide">
 											<div class="features-slide">
 												<div class="grid-x grid-margin-20">
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="video-thumbnail">
 															<img src="images/video-thumbnail-big.png" alt="Cloud Gaming : Video 1" />
 															<span class="button">
@@ -424,7 +438,7 @@
 															</span>
 														</div>
 													</div>
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="grid-x grid-margin-20 small-up-2">
 															<div class="cell small-6">
 																<div class="video-thumbnail">
@@ -466,7 +480,7 @@
 										<li class="orbit-slide">
 											<div class="features-slide">
 												<div class="grid-x grid-margin-20">
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="video-thumbnail">
 															<img src="images/video-thumbnail-big.png" alt="Cloud Gaming : Video 1" />
 															<span class="button">
@@ -474,7 +488,7 @@
 															</span>
 														</div>
 													</div>
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="grid-x grid-margin-20 small-up-2">
 															<div class="cell small-6">
 																<div class="video-thumbnail">
@@ -516,7 +530,7 @@
 										<li class="orbit-slide">
 											<div class="features-slide">
 												<div class="grid-x grid-margin-20">
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="video-thumbnail">
 															<img src="images/video-thumbnail-big.png" alt="Cloud Gaming : Video 1" />
 															<span class="button">
@@ -524,7 +538,7 @@
 															</span>
 														</div>
 													</div>
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="grid-x grid-margin-20 small-up-2">
 															<div class="cell small-6">
 																<div class="video-thumbnail">
@@ -566,7 +580,7 @@
 										<li class="orbit-slide">
 											<div class="features-slide">
 												<div class="grid-x grid-margin-20">
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="video-thumbnail">
 															<img src="images/video-thumbnail-big.png" alt="Cloud Gaming : Video 1" />
 															<span class="button">
@@ -574,7 +588,7 @@
 															</span>
 														</div>
 													</div>
-													<div class="cell small-12 medium-6">
+													<div class="cell small-12 medium-12 large-6">
 														<div class="grid-x grid-margin-20 small-up-2">
 															<div class="cell small-6">
 																<div class="video-thumbnail">
@@ -646,6 +660,7 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<div class="section section-interactives text-center" data-anchor="interactives">
 			<h2>Interactive Livestream</h2>
@@ -653,8 +668,8 @@
 		<div class="section section-rewards dark text-center" data-anchor="rewards">
 			<h2>Rewards</h2>
 		</div>
-		<div class="section section-contact dark text-center" data-anchor="contact">
-			<div class="section-footers">
+		<div class="section section-contact dark text-center " data-anchor="contact">
+			<div class="section-footers fp-auto-height-responsive">
 				<div class="section-articles">
 					<div class="grid-container">
 						<div class="grid-x grid-margin-x align-center">
@@ -741,8 +756,7 @@
 		</div>
 	</div>
 
-	<div class="reveal large" id="reveal-intro-video" data-reveal data-reset-on-close="true" data-v-offset="100" data-animation-in="scale-in-down fast"
-	 data-animation-out="scale-out-up fast">
+	<div class="reveal large" id="reveal-intro-video" data-reveal data-reset-on-close="true" data-v-offset="100" data-deep-link="true" data-update-history="true">
 		<div class="responsive-embed widescreen">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/9M-ZFD_AXiI" frameborder="0" allow="autoplay; encrypted-media"
 			 allowfullscreen></iframe>
@@ -760,36 +774,7 @@
 
 	<script src="js/vendor/jquery.fullpage.min.js"></script>
 	<script src="js/vendor/jquery.easings.min.js"></script>
-	<script>
-		jQ = jQuery.noConflict();
-		jQ(document).ready(function ($) {
-			$(document).foundation();
-			$('#fullpage').fullpage({
-				fixedElements: '#header, #footer',
-				normalScrollElements: '',
-				navigation: true,
-				normalScrollElementTouchThreshold: 2,
-				css3: true,
-				menu: '#menu-stream',
-				scrollingSpeed: 1000,
-				slidesNavigation: true,
-				onLeave: function (index, nextIndex, direction) {
-					var leavingSection = this;
-					if ( nextIndex == 3 ) {
-						$('#menu-stream li[data-menuanchor="intro"] a').addClass('active-by-js')
-					} else if (nextIndex != 3) {
-						$('#menu-stream li[data-menuanchor="intro"] a').removeClass('active-by-js')
-					}
-					if ( nextIndex == 6 || nextIndex == 7 ) {
-						$('#menu-stream li[data-menuanchor="cloud-gaming"] a').addClass('active-by-js')
-					} else if ( nextIndex != 6 || nextIndex != 7 ) {
-						$('#menu-stream li[data-menuanchor="cloud-gaming"] a').removeClass('active-by-js')
-					}
-				}
-			});
-		});
-	</script>
-
+	<script src="js/app.js"></script>
 </body>
 
 </html>
