@@ -453,7 +453,8 @@ p, ol li, ul li {
   font-weight: 600
 }
 .btn-ciayo-blog:hover, .button.btn-ciayo-blog:focus {
-  background-color:#e3e3e3
+  background-color:#e3e3e3; 
+  color: #333
 }
 .footer-content {
   text-align: left;
@@ -581,8 +582,8 @@ p, ol li, ul li {
 
   #body.open-menu .responsive-menu > a .fa:before { content:"\f00d"}
 
-  .section-cloud-gaming-subscription { background: url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top 75vh;}
-  .section-cloud-gaming-videos { background: url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top -25vh;}
+  .section-cloud-gaming-subscription { background: url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 center; background-size:auto 40%; }
+  .section-cloud-gaming-videos {  background: url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 center; background-size:auto 40%;}
 
 }
 @media only screen and (max-width:40em){
@@ -617,7 +618,7 @@ p, ol li, ul li {
   .section-intro .block-item p { color:#fff;} */
 
   .section-intro-video { background:#4E4EA5}
-  .section-intro-video h4 { font: size 1.25rem;}
+  .section-intro-video h4 { font-size: 1.25rem;}
   .section-features .block-list { display:block;}
 
   .block-menu .block-item { margin:0 auto; max-width:180px;}
@@ -634,5 +635,6 @@ p, ol li, ul li {
   .orbit-bullets button { width:1rem;}
 
   .section-image img { max-width: 120px;}
-
+  
+  .btn-ciayo-blog { padding:0 1rem; padding-left:2.75rem; background-position: left 16px center; white-space: nowrap}
 }
