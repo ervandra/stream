@@ -45,6 +45,9 @@ p, ol li, ul li {
 .grid-margin-20 > .medium-6 {
   width: calc(50% - 1.25rem);
 }
+.grid-margin-20 > .large-6 {
+  width: calc(50% - 1.25rem);
+}
 .section.dark {
   background:#4e4ea5;
 }
@@ -201,7 +204,7 @@ p, ol li, ul li {
   background: url(../images/backgrounds/bg-arrow-small.png) no-repeat left 80px top 30vh, url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top 75vh;
 }
 .section-cloud-gaming-videos {
-  background: url(../images/backgrounds/bg-arrow-small-variant.png) no-repeat right -32px top 35vh, url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top -25vh;
+  background: url(../images/backgrounds/bg-arrow-small-variant.png) no-repeat left -48px top 35vh, url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top -25vh;
 }
 .article h2 {
   font-size:2rem;
@@ -540,7 +543,9 @@ p, ol li, ul li {
   
 }
 @media only screen and (max-width:48em){
-
+  .grid-margin-20 > .small-12 {
+    width: calc(100% - 1.25rem);
+  } 
   .grid-margin-wide {
     margin-left:-1rem;
     margin-right:-1rem
@@ -575,6 +580,9 @@ p, ol li, ul li {
   #header #menu-stream:before { display:block; position:absolute; top:-20px; right: 2rem; border-width:10px; border-style:solid; border-color: transparent transparent rgba(78, 78, 165, 1); content:""}
 
   #body.open-menu .responsive-menu > a .fa:before { content:"\f00d"}
+
+  .section-cloud-gaming-subscription { background: url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top 75vh;}
+  .section-cloud-gaming-videos { background: url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top -25vh;}
 
 }
 @media only screen and (max-width:40em){
