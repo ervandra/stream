@@ -97,6 +97,14 @@ p, ol li, ul li {
 .video-thumbnail:hover img, .video-thumbnail:focus img {
   filter:blur(3px)
 }
+.video-thumbnail.thumbnail-small .button {
+  width:48px;
+  height: 48px;
+  line-height: 48px;
+  font-size:2.5rem;
+  margin-left:-24px;
+  margin-top:-24px;
+}
 .orbit-bullets {
   margin:3rem 0 2rem
 }
@@ -206,6 +214,14 @@ p, ol li, ul li {
 .section-cloud-gaming-videos {
   background: url(../images/backgrounds/bg-arrow-small-variant.png) no-repeat left -48px top 35vh, url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top -25vh;
 }
+.section-interactives {
+  background: url(../images/backgrounds/bg-arrow-white.png) no-repeat right 0 top -125vh;
+}
+
+.section-ecommerce {
+  background: url(../images/backgrounds/bg-rewards.png) no-repeat left bottom;
+}
+
 .article h2 {
   font-size:2rem;
   font-weight:700;
@@ -375,6 +391,10 @@ p, ol li, ul li {
   top:8px;
   background:#EAAE61;
 }
+.features li strong {
+  color: #4E4EA5;
+  display:block;
+}
 .features p {
   font-size:18px;
   margin-bottom:1rem;
@@ -505,6 +525,8 @@ p, ol li, ul li {
 
 #fp-nav ul li a, .fp-slidesNav ul li a {}
 #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span, #fp-nav ul li.same-section a span { background:#4E4EA5; border:1px solid rgba(255,255,255,.2)}
+
+.section-interactives-more .video-thumbnail { margin-bottom:1rem;}
 
 @media only screen and (max-width:64em){
   .section { padding:0}
