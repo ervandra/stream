@@ -503,6 +503,9 @@ p, ol li, ul li {
 .responsive-menu { display: none}
 .responsive-menu a { display:block; margin:0; padding:0; width:40px; height:40px; line-height:40px; font-size:2rem; text-align:center; color:#fff}
 
+#fp-nav ul li a, .fp-slidesNav ul li a {}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span, #fp-nav ul li.same-section a span { background:#4E4EA5; border:1px solid rgba(255,255,255,.2)}
+
 @media only screen and (max-width:64em){
   .section { padding:0}
 
