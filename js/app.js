@@ -1,6 +1,7 @@
 var jQ = jQuery.noConflict();
 jQ(document).ready(function($){
   $(document).foundation();
+
   $('body').addClass('is-ready');
   
   $('#fullpage').fullpage({
@@ -84,4 +85,11 @@ jQ(document).ready(function($){
       }
     }
   });
+  
+  $('.reveal').on('open.zf.reveal', function(e){
+    var el = $(this).find('iframe');
+    if(!el.attr('src')){
+      el.attr('src', el.data('src'));
+    }
+  })
 })
