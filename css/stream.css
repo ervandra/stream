@@ -482,27 +482,12 @@ button.yellow:hover, .button.yellow:hover, button.yellow:focus, .button.yellow:f
   cursor: pointer;
   transition: all ease-in-out .1s;
 }
-  /* 
-.features .features-img img {
-  border-radius: 4px;
-  width: 100%;
-  transition: all ease-in-out .1s;
-
-.features .features-img:hover,
-.features .features-img:focus {
-  transition: all ease-in-out .3s;
-
-.features .features-img:hover img, 
-.features .features-img:focus img {
-  transition: all ease-in-out .3s;
-  opacity: .8;
-  filter: blur(1px); 
-*/
 
 .features.subscription h3 {
   margin: 0 0 0.25rem;
   text-transform: uppercase;
   font-size: 1.5rem;
+  outline:none;
 }
 .features.subscription:hover h3, .features.subscription:hover p, .features.subscription:focus h3, .features.subscription:focus p {
   text-decoration: underline
