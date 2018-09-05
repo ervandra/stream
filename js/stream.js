@@ -15,6 +15,13 @@ jQ(document).ready(function($){
     scrollingSpeed: 1000,
     bigSectionsDestination: 'top',
     slidesNavigation: false,
+    afterRender: function(){
+      var pluginContainer = this;
+      $('#loading').fadeOut(1000);
+      setTimeout(() => {
+        $('#loading').remove();  
+      }, 1000);
+    },
     afterLoad: function(origin, index, destination, direction){
       if ( index == 2 || index == 3 ) { 
         $('#fp-nav ul li:nth-child(2), #fp-nav ul li:nth-child(3)').addClass('same-section')
@@ -36,7 +43,9 @@ jQ(document).ready(function($){
       }else {
         $('#fp-nav ul li:nth-child(10), #fp-nav ul li:nth-child(11)').removeClass('same-section')
       }
-
+      if( index == 1){
+        $('#video')[0].play();    
+      }
     },
     onLeave: function (index, nextIndex, direction) {
       var leavingSection = this;
